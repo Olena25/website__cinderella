@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cinderella</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <header>
+        <p id="title">CINDERELLA</p>
+        <ul id="menu">
+            <li><a href="#">Головна</a></li>
+            <li id="colection"><a href="#">Колекції</a>
+                <ul id="sub__menu">
+                    <li class="sub__menu__item"><a href="evening-dress.html">Вечірні сукні</a></li>
+                    <li class="sub__menu__item"><a href="wedding-dress.html">Весільні сукні</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div id="banner">
+            <img src="img/cinderella.jpg" alt="cinderella" id="main__banner">
+            <p>Салон вечірніх суконь</p>
+        </div>
+    </header>
+    
+    <div id="content">
+        <div id="images">
+            <img src="img/princess2.jpg" alt="princess2">
+            <img src="img/princess.jpg" alt="princess">
+        </div>
+        <div id="info">
+            <p id="main"> Ми – це команда справжніх професіоналів, адже лише у нас:</p>
+            <ul>
+                <li>10 років досвіду та більше 1000 наречених з усього світу;</li>
+                <li>більше 2000 задоволених випускниць;</li>
+                <li>власне виробництво;</li>
+                <li>щорічна участь в Barcelona Bridal Fashion Week;</li>
+                <li>розробка та створення індивідуального дизайну сукні;</li>
+                <li>програма лояльності, івенти для наречених та випускниць, покази, майстер-класи;</li>
+            </ul>
+            
+            <form action="https://formspree.io/mqkzrnvq" method="POST"">
+                <p>Записатися на примірку:)</p>
+                <input type="text" placeholder="Імя">
+                <br>
+                <input type="text" placeholder="Прізвище">
+                <br>
+                <input type="email" placeholder="Email">
+                <br>
+                <input id="button" type="submit" value="Записатися">
+                <br>
+            </form>
+            <div id="contacts">
+                <p><span>Наш телефон:</span><span>+380955061027</span></p>
+                <p><span>Email: </span><span><a
+                            href="https://mail.google.com/mail/u/0/#inbox">cinderella@gmail.com</a></span></p>
+                <p><span>Адреса:</span><span>м.Львів,вул.Квіткова 25</span></p>
+            </div>
+            <div id="wrap__map">
+                <div id="map"></div>
+            </div>
+            <div id="information__about_designer">
+                    <h2>Інформація про модельєра</h2>
+                    <div>Ім'я: <span class="name"></span></div>
+                    <div>Найвідоміша колекція: <span class="colection"></span></div>
+                    <button id="bth-John">John disigner</button>
+                    <button id="bth-Siella">Siella disigner</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <a href="https://m.facebook.com/"><img class="social__network" src="img/facebook.png" alt="facebook"></a>
+            <a href="https://www.instagram.com/"><img class="social__network" src="img/instagram.png" alt="instagram"></a>
+            <a href="https://twitter.com/"><img class="social__network" src="img/twitter.png" alt="twitter"> </a>
+            <a href="https://www.youtube.com/"><img class="social__network" src="img/youtube.png" alt="youtube"></a>
+        </div>
+    </footer>
+    <script src="js/map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDenlVaKjXSeUdYo_pHh82EdkpCmRaIy9Y&callback=initMap"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

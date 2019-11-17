@@ -1,0 +1,49 @@
+html,body,header,div,span,img,ul,li,form,input,p,a,footer{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    font-family: 'Times New Roman', Times, serif;
+    font-style:italic;
+}
+.evening-dress {
+    text-align: center;
+    color: black;
+    font-size: 60px;
+    font-weight: normal;
+}
+
+.designer {
+    color: #c238eb;
+    text-align: center;
+    font-size: 48px;
+    font-weight: normal;
+}
+
+.product-list img {
+    width: 500px;
+    max-width: 100%;
+    max-height: 580px;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+.product-list p {
+    text-align: center;
+}
+
+
+
+@media only screen and (max-width: 765px) {
+    .evening-dress, .designer {
+        font-size:30px;
+    }
+    .product-list {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
