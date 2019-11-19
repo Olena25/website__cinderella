@@ -7,18 +7,18 @@ body{
     margin: auto;
 }
 :root{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-style:italic;
 }
 .evening-dress {
     text-align: center;
-    color: black;
+    color:#c238eb ;
     font-size: 60px;
     font-weight: normal;
 }
 
 .designer {
-    color: #c238eb;
+    color:#c238eb; 
     text-align: center;
     font-size: 48px;
     font-weight: normal;
