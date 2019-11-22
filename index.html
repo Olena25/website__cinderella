@@ -6,27 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cinderella</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/slick.css">
 </head>
 
 <body>
     <header>
-        <p id="title">CINDERELLA</p>
-        <ul id="menu">
-            <li><a href="#">Головна</a></li>
-            <li id="colection"><a href="#">Колекції</a>
-                <ul id="sub__menu">
-                    <li class="sub__menu__item"><a href="evening-dress.html">Вечірні сукні</a></li>
-                    <li class="sub__menu__item"><a href="wedding-dress.html">Весільні сукні</a></li>
-                </ul>
-            </li>
-        </ul>
+        <p id="title">CINDERELLA </p>
+        <nav>
+            <ul class="topmenu">
+                <li><a href="">Головна</a></li>
+                <li><a href="" class="down">Колекції</a>
+                    <ul class="submenu">
+                        <li class="sub__menu__item"><a href="evening-dress.html">Вечірні сукні</a></li>
+                        <li class="sub__menu__item"><a href="wedding-dress.html">Весільні сукні</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
         <div id="banner">
             <img src="img/cinderella.jpg" alt="cinderella" id="main__banner">
-            <p>Салон вечірніх суконь</p>
+            <p><span>Салон вечірніх суконь</span><span>Найкращий асортимент у Львові</span></p>
         </div>
     </header>
-    
     <div id="content">
         <div id="images">
             <img src="img/princess2.jpg" alt="princess2">
@@ -42,47 +47,112 @@
                 <li>розробка та створення індивідуального дизайну сукні;</li>
                 <li>програма лояльності, івенти для наречених та випускниць, покази, майстер-класи;</li>
             </ul>
-            
-            <form action="https://formspree.io/mqkzrnvq" method="POST"">
-                <p>Записатися на примірку:)</p>
-                <input type="text" placeholder="Імя">
-                <br>
-                <input type="text" placeholder="Прізвище">
-                <br>
-                <input type="email" placeholder="Email">
-                <br>
-                <input id="button" type="submit" value="Записатися">
-                <br>
-            </form>
-            <div id="contacts">
-                <p><span>Наш телефон:</span><span>+380955061027</span></p>
-                <p><span>Email: </span><span><a
-                            href="https://mail.google.com/mail/u/0/#inbox">cinderella@gmail.com</a></span></p>
-                <p><span>Адреса:</span><span>м.Львів,вул.Квіткова 25</span></p>
-            </div>
-            <div id="wrap__map">
-                <div id="map"></div>
-            </div>
-            <div id="information__about_designer">
-                    <h2>Інформація про модельєра</h2>
-                    <div>Ім'я: <span class="name"></span></div>
-                    <div>Найвідоміша колекція: <span class="colection"></span></div>
+            <div class="fashion__designers">
+                <p class="title">Наші дизайнери, які добре відомі в світі моди</p>
+                <div class="bth">
                     <button id="bth-John">John disigner</button>
                     <button id="bth-Siella">Siella disigner</button>
+                    <button id="bth-Morena">Morena disigner</button>
+                    <button id="bth-Aturro">Aturro disigner</button>
+                </div>
+                <div id="information__about_designer">
+                    <div>Ім'я: <span class="name"></span></div>
+                    <div>Найвідоміша колекція: <span class="colection"></span></div>
+                    <div>Ціна за консультацію: <span class="price_consultation"></span></div>
+                    <div>Персональне пошиття на замовлення: <span class="personal__work"></span></div>
+                </div>
+            </div>
+            <div id="wrap__map">
+                <p>Наше розташування</p>
+                <div id="map"></div>
+            </div>
+        </div>
+    </div>
+    <div class="wrap_slider">
+        <div class="title__slider">
+            Новинки цього сезону
+        </div>
+        <div class="wrap_slider__information">
+            <div class="dress__information">
+                <div class="wrap__dress">
+                    <div class="main__information">
+                        Ми шануємо Вашу індивідуальність і захоплюємося нею!
+                        Ми можемо зробити все, щоб її зберегти і підкреслити та знаємо, як здійснити Вашу мрію про Вашу
+                        весільну сукню! Саме тому ми розширили концепцію сервісу салону і доповнили новою ідеєю -
+                        ательє!
+                        Після вибору весільної сукні у салоні CINDERELLA Ваше замовлення переходить до рук справжніх
+                        професіоналів. Далі за роботу беруться наші феї… і розпочинається це магічне дійство - пошиття
+                        або індивідуалізація Вашої весільної сукні!
+                    </div>
+                </div>
+                <form action="https://formspree.io/mqkzrnvq" method="POST">
+                    <p>Записатися на примірку:)</p>
+                    <input type="text" placeholder="Імя">
+                    <input type="text" placeholder="Прізвище">
+                    <input type="email" placeholder="Email">
+                    <input id="button" type="submit" value="Записатися">
+                </form>
+            </div>
+            <div class="slider">
+                <div class="item__slider">
+                    <img src="img/silverRedDress.png" alt="">
+                    <div class="model">
+                        <span>Сукня Red Sea</span>
+                    </div>
+                </div>
+                <div class="item__slider">
+                    <img src="img/BlackCherryDress.png" alt="">
+                    <div class="model">
+                        <span>Сукня Black Beverly</span>
+                    </div>
+                </div>
+                <div class="item__slider">
+                    <img src="img/SlimDress.jpg" alt="">
+                    <div class="model">
+                        <span>Сукня Romatico Aroow</span>
+                    </div>
+                </div>
+                <div class="item__slider">
+                    <img src="img/BagAndDress.jpg" alt="">
+                    <div class="model">
+                        <span>Сукня Flying Sky</span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <footer>
-        <div>
-            <a href="https://m.facebook.com/"><img class="social__network" src="img/facebook.png" alt="facebook"></a>
-            <a href="https://www.instagram.com/"><img class="social__network" src="img/instagram.png" alt="instagram"></a>
-            <a href="https://twitter.com/"><img class="social__network" src="img/twitter.png" alt="twitter"> </a>
-            <a href="https://www.youtube.com/"><img class="social__network" src="img/youtube.png" alt="youtube"></a>
+        <div id="contacts">
+            <p>
+                <span>Наш телефон: </span>
+                <span>+380955061027</span>
+            </p>
+            <p>
+                <span>Email: </span>
+                <span>
+                    <a href="https://mail.google.com/">cinderella@gmail.com </a>
+                </span>
+            </p>
+            <p>
+                <span>Адреса: </span>
+                <span>м.Львів,вул.Квіткова 25</span>
+            </p>
+        </div>
+        <div class="social__networks">
+            <a href="https://m.facebook.com/"><img class="item__social__network" src="img/facebook.png"
+                    alt="facebook"></a>
+            <a href="https://www.instagram.com/"><img class="item__social__network" src="img/instagram.png"
+                    alt="instagram"></a>
+            <a href="https://twitter.com/"><img class="item__social__network" src="img/twitter.png" alt="twitter"> </a>
+            <a href="https://www.youtube.com/"><img class="item__social__network" src="img/youtube.png"
+                    alt="youtube"></a>
         </div>
     </footer>
     <script src="js/map.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDenlVaKjXSeUdYo_pHh82EdkpCmRaIy9Y&callback=initMap"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDenlVaKjXSeUdYo_pHh82EdkpCmRaIy9Y&callback=initMap">
+    </script>
     <script src="js/index.js"></script>
+    <script src="js/slick.js"></script>
 </body>
 
 </html>
